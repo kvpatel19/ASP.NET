@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles.css" rel="stylesheeet" type="text/css" />
+</head>
+<body>
+    
+        <!==Header-->
+    <header>
+        <div class="logo">
+            <img src="images/mjkacc.jpg" alt="logo" width="100" />
+           
+    </div>
+        <h1>MJKACC</h1>
+        </header>
+    <!--navigation menu-->
+    <nav>
+        <ul>
+            <li><a href="home.aspx">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="prg16.aspx">Gallary</a></li>
+            <li><a href="#">Registration</a></li>
+        </ul>
+    </nav>
+    <!--main content area-->
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+    <!--footer-->
+    <footer>
+        <p>M.J.Kundaliya college,Rajkot</p>
+    </footer>
+</body>
+</html>
